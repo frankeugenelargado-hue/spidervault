@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis">
+    <link rel="stylesheet" href="materialize.min.css">
+    <title>Materialize Tutorial</title>
+    <style>
+        nav .badge {
+            position: relative;
+            top: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Modals</h2>
+
+        <a href="#terms" class="btn orange modal-trigger">Terms & Conditions</a>
+
+        <div class="modal" id="terms">
+            <div class="modal-content">
+                <h4>Terms & Conditions</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit fugit magni ex culpa itaque
+                    doloremque adipisci veniam distinctio temporibus? Saepe maiores pariatur cum dolor a magni voluptate
+                    aliquam nihil tempore.</p>
+            </div>
+            <div class="modal=footer">
+                <a href="#!" class="modal-close btn orange">Agree</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+            $('.modal').modal();
+        })
+    </script>
+</body>
+
+</html>

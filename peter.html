@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peter B. Parker - SpiderVault</title>
+
+  <link href="materialize-v1.0.0/materialize/css/materialize.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      margin: 0;
+      padding: 0;
+    }
+
+    .hero-banner {
+      background-color: #4a148c;
+      color: white;
+      text-align: center;
+      min-height: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .hero-banner h2 {
+      font-size: 2rem;
+    }
+
+    .character-content {
+      margin-top: 40px;
+    }
+
+    .quote {
+      font-family: 'Merriweather', serif;
+      font-style: italic;
+      font-size: 1.1rem;
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    .back-btn {
+      margin-top: 30px;
+    }
+
+    footer {
+      margin-top: 60px;
+    }
+
+    .section-title {
+      font-weight: bold;
+      margin-top: 25px;
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+      color: #4a148c;
+    }
+    strong{
+        font-weight: bold;
+    }
+
+    .additional-images img {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="purple darken-3">
+    <div class="nav-wrapper container">
+      <a href="index.html" class="brand-logo">SpiderVault</a>
+      <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-menu">
+    <li><a href="index.html">Home</a></li>
+  </ul>
+
+  <div class="hero-banner">
+    <h2><strong>Peter B. Parker</strong></h2>
+    <p>Older, worn-out Spider-Man from another dimension, rediscovering what it means to be a hero.</p>
+  </div>
+
+  <div class="container character-content">
+    <div class="row">
+      <div class="col s12 m6">
+        <img src="Images/peter.webp" class="materialboxed responsive-img z-depth-3">
+        <div class="additional-images">
+          <img src="Images/peter.jpg" class="materialboxed responsive-img z-depth-3 hide-on-med-and-down">
+          <img src="Images/peter2.webp" class="materialboxed responsive-img z-depth-3 hide-on-med-and-down">
+          <img src="Images/peter1.webp" class="materialboxed responsive-img z-depth-3 hide-on-med-and-down">
+        </div>
+      </div>
+
+      <div class="col s12 m6">
+        <span class="quote">“You won’t know it’s the right moment. That’s why it’s a leap of faith.”</span>
+
+        <p><strong>Character Description:</strong> Peter B. Parker is an older, worn-out Spider-Man from another dimension who’s lost his confidence — and his way. Despite his flaws, he becomes an unexpected mentor to Miles and rediscovers what it means to be a hero.</p>
+
+        <p class="section-title">Abilities</p>
+        <ul>
+          <li><strong>Wall-Crawling:</strong> Can cling to and scale walls.</li>
+          <li><strong>Spider-Sense:</strong> Alerts him to nearby danger.</li>
+          <li><strong>Web-Slinging & Web-Shooters:</strong>Creates webs for swinging, restraining enemies, or building temporary structures.</li>
+          <li><strong>Enhanced Strength, Speed, Agility, and Reflexes.</strong></li>
+        </ul>
+
+        <p class="section-title">Relationships</p>
+        <ul>
+          <li><strong>Miles Morales:</strong> Mentor and guide across the Spider-Verse.</li>
+          <li><strong>Gwen Stacy:</strong> Ally and friend; works together in multiverse adventures.</li>
+          <li><strong>Mary Jane:</strong> Ex-partner</li>
+          <li><strong>Spider-People across Multiverse:</strong> Collaborators and friends.</li>
+        </ul>
+
+        <p class="section-title">Background</p>
+        <p>An older, experienced Spider-Man from another dimension. He’s a little jaded, has been divorced, and lost confidence, but he rediscovers heroism through mentoring Miles.</p>
+
+        <p class="section-title">Fun Facts</p>
+        <ul>
+          <li>First appeared in The Amazing Spider-Man #15 (1963) as Peter Parker, B version is Spider-Verse</li>
+          <li>Known for being a more relaxed, humorous Spider-Man</li>
+          <li>Often sarcastic but reliable in battle</li>
+        </ul>
+
+        <a href="index.html" class="btn purple darken-3 back-btn">
+          <i class="material-icons left">arrow_back</i>Back to Home
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer purple darken-3">
+    <div class="container center white-text">
+      2025 SpiderVault - All rights reserved.
+    </div>
+  </footer>
+
+  <script src="jquery-3.7.1.min.js"></script>
+  <script src="materialize-v1.0.0/materialize/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".sidenav").sidenav();
+      $('.materialboxed').materialbox();
+    });
+  </script>
+
+</body>
+</html>

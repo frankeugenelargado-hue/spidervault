@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stickpedia</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+
+    <style>
+        header {
+         background: url(img/background.avif) no-repeat center center;
+         background-size: cover;
+          height: 100vh;
+        }
+
+
+        @media screen and (max-width: 670px) {
+            header {
+                height: 50vh;
+            }
+        }
+        p.about {
+            text-align: justify;
+            font-size: medium;
+        }
+        header a.brand-logo {
+            color:#bf360c;
+        }
+
+        .section {
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
+
+        .tabs .indicator {
+            background-color: #1a237e;
+        }
+
+        .tabs .tab a:focus,
+        .tabs .tab a:focus.active {
+            background-color: transparent;
+        }
+        #type {
+            border-radius: 8px;
+        }
+        p{
+            font-size: medium;
+        }
+        p a {
+        text-decoration: none;
+        color: inherit;
+        }
+        p a:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="nav-wrapper transparent z-depth-0">
+            <div class="container">
+                <a class="brand-logo">Stickpedia</a>
+
+                <a href="#" class="right sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+                </a>
+
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#photos">Types</a></li>
+                    <li><a href="#services">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                    <!-- Social icons -->
+                    <li><a href="https://www.instagram.com/officialsticknation/" class="tooltipped btn-floating btn-small orange darken-3" data-tooltip="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a></li>
+
+                    <li><a href="https://www.facebook.com/profile.php?id=61570646667674" class="tooltipped btn-floating btn-small orange darken-3" data-tooltip="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a></li>
+
+                    <li><a href="https://x.com/Stick_nation_" class="tooltipped btn-floating btn-small orange darken-3" data-tooltip="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a></li>
+                </ul>
+
+                <!-- MOBILE MENU -->
+                <ul class="sidenav orange darken-3" id="mobile-menu">
+                    <li><a href="#photos">Types</a></li>
+                    <li><a href="#services">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- PHOTO GRID -->
+    <section id="photos" class="container section scrollspy">
+        <div class="row">
+            
+            <div class="col s12 l5">
+                <img src="img/sword.jfif" class="responsive-img materialboxed" id="type">
+            </div>
+                <div class="col s12 l6 offset-l1">
+                <h2 class="orange-text text-darken-3">Swords</h2>
+                <p>A sword is a long-bladed weapon designed for cutting and thrusting. In real life, swords vary from lightweight dueling blades to heavy battlefield weapons, known for balance and precision.</p>
+                <div class="col s12">
+            <a class="waves-effect waves-light btn">Click Here to know more about Swords</a>
+            </div>
+            
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l6 push-l7">
+                <img src="img/wands.jfif" class="responsive-img materialboxed" id="type">
+            </div>
+            <div class="col s12 l6 pull-l5 right-align">
+                <h2 class="orange-text text-darken-3">Wands</h2>
+                <p>A wand is a small, handheld rod often used in rituals, symbolism, or stage magic. It doesn’t attack physically — instead, it represents control, focus, or "channeling" energy in fictional settings.</p>
+                <div class="col s12">
+            <a class="waves-effect waves-light btn">Click Here to know more about Wands</a>
+            </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 l5">
+                <img src="img/guns.jfif" class="responsive-img materialboxed" id="type">
+            </div>
+
+            <div class="col s12 l6 offset-l1">
+                <h2 class="orange-text text-darken-3">Guns</h2>
+                <p>Guns are ranged weapons that use the combustion of gunpowder to fire projectiles. They vary widely in size and function, from handguns to rifles, and are known for their power and precision in real life.</p>
+            <div class="col s12">
+            <a class="waves-effect waves-light btn">Click Here to know more about Guns</a>
+            </div>
+            </div>
+        </div>
+
+         <div class="row">
+            <div class="col s12 l5 push-l7">
+                <img src="img/equipment.jfif" class="responsive-img materialboxed" id="type">
+            </div>
+            <div class="col s12 l6 pull-l5 right-align">
+                <h2 class="orange-text text-darken-3">Equipment</h2>
+                <p>Equipment refers to the tools and gear used to support various activities, including combat, survival, or specialized tasks. This can include armor, backpacks, and other accessories that enhance functionality and protection.</p>
+                <div class="col s12">
+            <a href="equipment.html" class="waves-effect waves-light btn">Click Here to know more about Equipment</a>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PARALLAX -->
+    <div class="parallax-container">
+        <div class="parallax"><img src="img/street.jpg"></div>
+    </div>
+
+    <!-- SERVICES -->
+    <section id="services" class="section container scrollspy">
+        <div class="row">
+            <div class="col s25 l16">
+                <h4 class="orange-text text-darken-3">Stickpedia – The Ultimate StickNation Knowledge Hub</h4>
+                <p class="about">Stickpedia is your all-in-one guide to everything within the StickNation universe. From detailed descriptions of weapons like swords, wands, and guns, to equipment such as gauntlets, armor, and special gear—Stickpedia breaks it all down in simple, real-life terms. Whether you're a creator, fan, or world-builder, this site helps you understand every type of stick, item, and concept in a clear and organized way.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PARALLAX -->
+    <div class="parallax-container">
+        <div class="parallax"><img src="img/stars.jpg"></div>
+    </div>
+
+    <!-- CONTACT FORM -->
+    <section id="contact" class="section container scrollspy">
+        <div class="row">
+            <div class="col s12 l5">
+                <h2 class="orange-text text-darken-3">Get in touch</h2>
+                <p class="about">If you have questions, suggestions, or ideas to help improve Stickpedia, feel free to reach out! Whether you want to request new content, report an error, or share feedback about the site, I’m always happy to hear from the community. Your insights help make Stickpedia better for everyone—so don’t hesitate to get in touch!</p>
+            </div>
+
+            <div class="col s12 l5 offset-l2">
+                <form>
+                    <div class="input-field">
+                        <i class="material-icons prefix">email</i>
+                        <input type="email" id="email">
+                        <label>Email</label>
+                    </div>
+
+                    <div class="input-field">
+                        <i class="material-icons prefix">message</i>
+                        <textarea class="materialize-textarea"></textarea>
+                        <label>Your Message</label>
+                    </div>
+
+                    <div class="input-field">
+                        <i class="material-icons prefix">date_range</i>
+                        <input type="text" id="date" class="datepicker">
+                        <label>Pick a date</label>
+                    </div>
+
+                    <div class="input-field center">
+                        <button class="btn indigo darken-4">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="page-footer orange darken-3">
+        <div class="container center-align">&copy; Stickpedia 2025</div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
+            $('.datepicker').datepicker();
+            $('.scrollspy').scrollSpy();
+            $('.tooltipped').tooltip();
+        });
+    </script>
+
+</body>
+
+</html>

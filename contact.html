@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback | Spider-Verse Characters</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <style>
+        header {
+            background: #6a1b9a;
+            padding: 20px;
+        }
+        header h4 {
+            color: white;
+            margin: 0;
+        }
+        .feedback-container {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="purple darken-3">
+        <div class="nav-wrapper container">
+            <a href="#" class="brand-logo">SpiderVault</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="characters.html">Characters</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="characters.html">Characters</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+
+    <header class="center-align">
+        <h4>We Value Your Feedback!</h4>
+    </header>
+
+    <div class="container feedback-container">
+        <div class="card">
+            <div class="card-content">
+                <h5 class="purple-text">Send Us a Message</h5>
+
+                <form action="mailto:YOUR_EMAIL_HERE@gmail.com" method="post" enctype="text/plain">
+                    
+                    <div class="input-field">
+                        <input id="name" type="text" name="Name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+
+                    <div class="input-field">
+                        <input id="email" type="email" name="Email" required>
+                        <label for="email">Your Email</label>
+                    </div>
+
+                    <div class="input-field">
+                        <textarea id="message" class="materialize-textarea" name="Message" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+
+                    <button type="submit" class="btn purple darken-2 waves-effect waves-light">
+                        <i class="material-icons left">send</i>Send Feedback
+                    </button>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer purple darken-4">
+        <div class="container center">
+             2025 SpiderVault - All rights reserved.
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+            $('.materialboxed').materialbox();
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About – SpiderVault</title>
+
+    <link href="materialize-v1.0.0/materialize/css/materialize.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+        .header-section {
+            background: linear-gradient(135deg, #4a148c, #6a1b9a);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 20px;
+            border: 4px solid #4a148c;
+        }
+
+        .section-title {
+            font-weight: bold;
+            color: #4a148c;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        .about-card {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="purple darken-3">
+        <div class="nav-wrapper container">
+            <a href="index.html" class="brand-logo">SpiderVault</a>
+            <a href="#" data-target="mobile-menu" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
+
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="media.html">Media</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="media.html">Media</a></li>
+    </ul>
+
+    <div class="header-section">
+        <h2>About SpiderVault</h2>
+        <p>Your portal into the Spider-Verse.</p>
+    </div>
+
+    <div class="container">
+        
+        <div class="card about-card hoverable">
+            <h4 class="section-title">📌 What Is SpiderVault?</h4>
+            <p>
+                SpiderVault is a fan-made website dedicated to showcasing the rich world of 
+                <strong>Spider-Man: Into the Spider-Verse</strong> and its multiverse of unique Spider-People.
+                Each character page contains quotes, abilities, relationships, backgrounds, and high-quality images
+                to help fans explore their favorite heroes.
+            </p>
+            <p>
+                The goal of the site is to create a clean, modern, and informative hub where anyone can learn
+                about the Spider-Verse characters, their roles, and their stories across dimensions.
+            </p>
+        </div>
+
+        <div class="card about-card hoverable">
+            <h4 class="section-title">🧑‍💻 About the Creator</h4>
+
+            <center>
+                <img src="Images/owner.jfif" alt="Owner" class="profile-img">
+            </center>
+
+            <p>
+                This website is created and managed by <strong>Frank Eugene Largado</strong>, a student and Spider-Verse fan who enjoys web design, multimedia, and storytelling.
+            </p>
+            <p>
+                The project started as a way to practice HTML, CSS, jQuery, Materialize, and responsive design — while building something fun and meaningful.
+            </p>
+            <p>
+                SpiderVault continues to expand with improved layouts, animations, character details, and more pages.
+            </p>
+        </div>
+
+        <div class="card about-card hoverable">
+            <h4 class="section-title">🎯 Mission & Purpose</h4>
+            <ul class="collection">
+                <li class="collection-item">✔ Provide easy-to-read character profiles</li>
+                <li class="collection-item">✔ Showcase the Spider-Verse with clean UI and modern design</li>
+                <li class="collection-item">✔ Help others learn HTML, CSS, and Materialize by example</li>
+                <li class="collection-item">✔ Celebrate the creativity and diversity of the Spider-Verse</li>
+            </ul>
+        </div>
+
+        <div class="card about-card hoverable">
+            <h4 class="section-title">🛠️ Technologies Used</h4>
+            <ul class="collection">
+                <li class="collection-item">Materialize CSS and JavaScript Framework</li>
+                <li class="collection-item">jQuery</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="page-footer purple darken-3">
+        <div class="container center white-text">
+            2025 SpiderVault - All rights reserved.
+        </div>
+    </footer>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="materialize-v1.0.0/materialize/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".sidenav").sidenav();
+        });
+    </script>
+
+</body>
+</html>

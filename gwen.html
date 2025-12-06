@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gwen Stacy - SpiderVault</title>
+  <link href="materialize-v1.0.0/materialize/css/materialize.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+    }
+    
+    nav {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .hero-banner {
+      background-color: #4a148c;
+      color: white;
+      text-align: center;
+      min-height: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+    
+    .hero-banner h2 {
+      font-size: 2rem;
+    }
+    
+    .character-content {
+      margin-top: 40px;
+    }
+    
+    .quote {
+      font-family: 'Merriweather', serif;
+      font-style: italic;
+      font-size: 1.1rem;
+      display: block;
+      margin-bottom: 15px;
+    }
+    
+    .back-btn {
+      margin-top: 30px;
+    }
+    
+    footer {
+      margin-top: 60px;
+    }
+    
+    .section-title {
+      font-weight: bold;
+      margin-top: 25px;
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+      color: #4a148c;
+    }
+    
+    strong {
+      font-weight: bold;
+    }
+    
+    .additional-images img {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="purple darken-3">
+    <div class="nav-wrapper container">
+      <a href="index.html" class="brand-logo">SpiderVault</a>
+      <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </div>
+  </nav>
+  <ul class="sidenav" id="mobile-menu">
+    <li><a href="index.html">Home</a></li>
+  </ul>
+  <div class="hero-banner">
+    <h2><strong>Gwen Stacy</strong></h2>
+    <p>Spider-Woman from an alternate dimension with grace and strength.</p>
+  </div>
+  <div class="container character-content">
+    <div class="row">
+      <div class="col s12 m6">
+        <img src="Images/gwen.jfif" class="materialboxed responsive-img z-depth-3">
+        <div class="additional-images">
+          <img src="Images/gwen1.webp" class="materialboxed responsive-img z-depth-3 hide-on-med-and-down">
+          <img src="Images/gwen2.webp" class="materialboxed responsive-img z-depth-3 hide-on-med-and-down">
+          <img src="Images/gwen3.jpg" class="materialboxed responsive-img z-depth-3 hide-on-med-and-down">
+        </div>
+      </div>
+      <div class="col s12 m6">
+        <span class="quote">“Don’t do it like me. Do it like you.”</span>
+        <p><strong>Character Description:</strong> Gwen Stacy is a confident, agile Spider-Woman who has faced loss yet continues to fight for justice. She uses her intelligence, acrobatics, and determination to help protect her city and the multiverse.</p>
+        <p class="section-title">Abilities</p>
+        <ul>
+          <li><strong>Wall-Crawling:</strong> Can cling to and scale walls.</li>
+          <li><strong>Spider-Sense:</strong> Detects danger before it happens.</li>
+          <li><strong>Enhanced Agility & Reflexes:</strong> Extremely fast and nimble.</li>
+          <li><strong>Martial Arts:</strong> Skilled in hand-to-hand combat.</li>
+        </ul>
+        <p class="section-title">Relationships</p>
+        <ul>
+          <li><strong>Miles Morales:</strong> Friend and ally in multiverse adventures.</li>
+          <li><strong>Peter B. Parker:</strong> Collaborator and mentor figure.</li>
+          <li><strong>Spider-People across Multiverse:</strong> Teammates and friends.</li>
+        </ul>
+        <p class="section-title">Background</p>
+        <p>Gwen gained her powers through a radioactive spider bite in her universe. She leads a dual life balancing normal teen challenges and her heroic duties as Spider-Woman.</p>
+        <p class="section-title">Fun Facts</p>
+        <ul>
+          <li>First appeared in Edge of Spider-Verse #2 (2014).</li>
+          <li>Also known as Spider-Woman or Spider-Gwen.</li>
+          <li>Known for her iconic white, black, and pink costume.</li>
+        </ul>
+        <a href="index.html" class="btn purple darken-3 back-btn">
+          <i class="material-icons left">arrow_back</i>Back to Home
+        </a>
+      </div>
+    </div>
+  </div>
+  <footer class="page-footer purple darken-3">
+    <div class="container center white-text">
+      2025 SpiderVault - All rights reserved.
+    </div>
+  </footer>
+  <script src="jquery-3.7.1.min.js"></script>
+  <script src="materialize-v1.0.0/materialize/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".sidenav").sidenav();
+      $('.materialboxed').materialbox();
+    });
+  </script>
+</body>
+</html>
