@@ -34,32 +34,52 @@
 .card-content {
   flex: 1;
 }
+/* Remove ONLY the unwanted top gap */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Make sure the very first element doesn't have a margin */
+body > :first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Remove heading margin that often causes top gaps */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+
+/* Ensure nav/header doesn't create extra space */
+header, nav, .nav-wrapper {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
   </style>
 </head>
 <body>
   
   <nav class="purple darken-3">
-        <div class="nav-wrapper container">
-            <a href="index.html" class="brand-logo">SpiderVault</a>
-            <a href="#" data-target="mobile-menu" class="sidenav-trigger">
-                <i class="material-icons">menu</i>
-            </a>
-
-            <ul class="right hide-on-med-and-down">
-                <li><a href="index.html">Home</a></li>
-                <li><a class="active" href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="media.html">Media</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <ul class="sidenav" id="mobile-menu">
+    <div class="nav-wrapper container">
+      <a href="#" class="brand-logo">SpiderVault</a>
+      <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
         <li><a href="index.html">Home</a></li>
-        <li><a class="active" href="about.html">About</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="media.html">Media</a></li>
-    </ul>
+      </ul>
+    </div>
+  </nav>
+  
+  <ul class="sidenav" id="mobile-menu">
+    <li><a class="active"href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>    
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="media.html">Media</a></li>
+  </ul>
  
   <div class="section center purple darken-4 white-text">
     <h2 class="header">Spider-Man: Into the Spider-Verse</h2>
